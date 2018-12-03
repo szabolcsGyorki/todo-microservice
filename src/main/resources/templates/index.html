@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo API</title>
+</head>
+<body>
+<div>
+    Todo API microservice for codecool. <br>
+    <br>
+    Usage: <br>
+    Retrieve the list of todos from the given user: <br>
+    https://codecool-todo-microservice.herokuapp.com/todo/{name} <br>
+    GET <a href="https://codecool-todo-microservice.herokuapp.com/todo/jeff">
+    https://codecool-todo-microservice.herokuapp.com/todo/jeff
+    </a>
+    <br>
+    <br>
+    Add new todos for the given user: <br>
+    https://codecool-todo-microservice.herokuapp.com/todo/{name}/{title} <br>
+    GET <a href="https://codecool-todo-microservice.herokuapp.com/todo/jeff/todo">
+    https://codecool-todo-microservice.herokuapp.com/todo/jeff/todo
+    </a>
+    <br>
+    <br>
+    Complete the todo: <br>
+    https://codecool-todo-microservice.herokuapp.com/todo/{name}/{id}/complete <br>
+    GET <a href="https://codecool-todo-microservice.herokuapp.com/todo/jeff/2/complete">
+    https://codecool-todo-microservice.herokuapp.com/todo/jeff/2/complete
+    </a>
+    <br>
+    <br>
+    Example response:
+    <div style="white-space: pre-wrap">
+        [
+            {
+                "id":1,
+                "title":"first todo",
+                "completed":true
+            },
+            {
+                "id":2,
+                "title":"another one",
+                "completed":true
+            }
+        ]
+    </div>
+</div>
+
+</body>
+</html>
